@@ -24,7 +24,8 @@ class ClassGenerator
 	public static function format(string $class)
 	{
 		$class_lines = explode("\n", $class);
-		$tab = "    ";
+//		$tab = "    ";
+		$tab = "\t";
 		$indent = 0;
 		foreach($class_lines as &$line) {
 			if (preg_match("/\}|^\);/mx", $line)) {
