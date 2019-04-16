@@ -27,7 +27,7 @@ class ClassGenerator
 		$tab = "    ";
 		$indent = 0;
 		foreach($class_lines as &$line) {
-			if (preg_match("/}|\);/", $line)) {
+			if (preg_match("/\}|^\);/mx", $line)) {
 				$indent--;
 			}
 
@@ -39,7 +39,7 @@ class ClassGenerator
 
 			$line = $tab_indent . $line;
 
-			if (preg_match("/{|\($/", $line)) {
+			if (preg_match("/{|\($/mx", $line)) {
 				$indent++;
 			}
 		}
