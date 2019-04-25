@@ -85,7 +85,7 @@ class ClassGenerator
 				$class .= "{$property->getDoc()}\n";
 			}
 
-			$class .= "{$property->getVisibility()} {$property->getName()}{$default_string}\n\n";
+			$class .= "{$property->getVisibility()} \${$property->getName()}{$default_string}\n\n";
 		}
 
 		foreach ($this->methods as $method) {
