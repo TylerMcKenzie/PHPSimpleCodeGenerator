@@ -1,13 +1,14 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: tmckenzie
+ * Created by Tyler Mckenzie
  * Date: 4/15/2019
- * Time: 12:42 PM
  */
 
 //include "./ClassAttribute.php";
 
+/**
+ * Class ClassMethod
+ */
 class ClassMethod extends ClassAttribute
 {
 	protected $function_contents;

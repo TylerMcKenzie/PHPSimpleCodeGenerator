@@ -24,10 +24,11 @@ class ClassGenerator
 	public static function format(string $class)
 	{
 		$class_lines = explode("\n", $class);
-		$tab = "    ";
+//		$tab = "    ";
+		$tab = "\t";
 		$indent = 0;
 		foreach($class_lines as &$line) {
-			if (preg_match("/}|\);/", $line)) {
+			if (preg_match("/\}|^\);/mx", $line)) {
 				$indent--;
 			}
 
@@ -39,7 +40,7 @@ class ClassGenerator
 
 			$line = $tab_indent . $line;
 
-			if (preg_match("/{|\($/", $line)) {
+			if (preg_match("/{|\($/mx", $line)) {
 				$indent++;
 			}
 		}
@@ -84,7 +85,7 @@ class ClassGenerator
 				$class .= "{$property->getDoc()}\n";
 			}
 
-			$class .= "{$property->getVisibility()} {$property->getName()}{$default_string}\n\n";
+			$class .= "{$property->getVisibility()} \${$property->getName()}{$default_string}\n\n";
 		}
 
 		foreach ($this->methods as $method) {
