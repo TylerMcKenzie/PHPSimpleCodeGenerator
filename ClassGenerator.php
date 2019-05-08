@@ -4,10 +4,10 @@
  * Date: 4/15/2019
  */
 
-namespace phptestgen;
+namespace PHPSimpleCodeGenerator;
 
-//include "./ClassMethod.php";
-//include "./ClassProperty.php";
+use ClassMethod;
+use ClassProperty;
 
 class ClassGenerator
 {

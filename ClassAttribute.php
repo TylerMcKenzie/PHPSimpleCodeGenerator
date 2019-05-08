@@ -4,6 +4,8 @@
  * Date: 4/15/2019
  */
 
+namespace PHPSimpleCodeGenerator;
+
 /**
  * Class ClassAttribute
  */
