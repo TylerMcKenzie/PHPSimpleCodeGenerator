@@ -6,5 +6,6 @@
             "email": "tylrmckenz@gmail.com"
         }
     ],
+	"minimum-stability": "@dev",
     "require": {}
 }
