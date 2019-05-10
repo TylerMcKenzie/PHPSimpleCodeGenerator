@@ -1,16 +1,18 @@
 {
-    "name": "tmckenzie/php-simple-code-generator",
-    "authors": [
-        {
-            "name": "tylermckenzie",
-            "email": "tylrmckenz@gmail.com"
-        }
-    ],
-	"minimum-stability": "@dev",
-    "require": {
-		"php": ">=7.0.33"
-	},
-	"autoload": {
-		"Tmckenzie\\PHPSimpleCodeGenerator\\": "src/"
-	}
+  "name": "tmckenzie/php-simple-code-generator",
+  "authors": [
+    {
+      "name": "tylermckenzie",
+      "email": "tylrmckenz@gmail.com"
+    }
+  ],
+  "minimum-stability": "@dev",
+  "require": {
+    "php": ">=7.0.33"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tmckenzie\\PHPSimpleCodeGenerator\\": "src/"
+    }
+  }
 }
