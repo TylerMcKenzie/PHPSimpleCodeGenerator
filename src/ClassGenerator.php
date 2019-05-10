@@ -4,10 +4,10 @@
  * Date: 4/15/2019
  */
 
-namespace PHPSimpleCodeGenerator;
+namespace Tmckenzie\PHPSimpleCodeGenerator;
 
-use PHPSimpleCodeGenerator\ClassMethod;
-use PHPSimpleCodeGenerator\ClassProperty;
+use Tmckenzie\PHPSimpleCodeGenerator\ClassMethod;
+use Tmckenzie\PHPSimpleCodeGenerator\ClassProperty;
 
 class ClassGenerator
 {
@@ -24,7 +24,6 @@ class ClassGenerator
 	public static function format(string $class)
 	{
 		$class_lines = explode("\n", $class);
-//		$tab = "    ";
 		$tab = "\t";
 		$indent = 0;
 		foreach($class_lines as &$line) {

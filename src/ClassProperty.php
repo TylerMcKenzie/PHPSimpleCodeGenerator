@@ -4,9 +4,9 @@
  * Date: 4/15/2019
  */
 
-namespace PHPSimpleCodeGenerator;
+namespace Tmckenzie\PHPSimpleCodeGenerator;
 
-use PHPSimpleCodeGenerator\ClassAttribute;
+use Tmckenzie\PHPSimpleCodeGenerator\ClassAttribute;
 
 /**
  * Class ClassProperty
