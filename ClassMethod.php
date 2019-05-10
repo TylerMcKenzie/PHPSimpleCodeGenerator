@@ -4,7 +4,9 @@
  * Date: 4/15/2019
  */
 
-//include "./ClassAttribute.php";
+namespace PHPSimpleCodeGenerator;
+
+use PHPSimpleCodeGenerator\ClassAttribute;
 
 /**
  * Class ClassMethod

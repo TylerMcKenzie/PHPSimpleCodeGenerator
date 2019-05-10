@@ -4,10 +4,10 @@
  * Date: 4/15/2019
  */
 
-namespace phptestgen;
+namespace PHPSimpleCodeGenerator;
 
-//include "./ClassMethod.php";
-//include "./ClassProperty.php";
+use PHPSimpleCodeGenerator\ClassMethod;
+use PHPSimpleCodeGenerator\ClassProperty;
 
 class ClassGenerator
 {
@@ -52,12 +52,12 @@ class ClassGenerator
 
 	public function __construct() {}
 
-	public function addProperty(\ClassProperty $property)
+	public function addProperty(ClassProperty $property)
 	{
 		$this->properties[] = $property;
 	}
 
-	public function addMethod(\ClassMethod $method)
+	public function addMethod(ClassMethod $method)
 	{
 		$this->methods[] = $method;
 	}
