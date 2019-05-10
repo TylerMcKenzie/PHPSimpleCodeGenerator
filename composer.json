@@ -11,6 +11,6 @@
 		"php": ">=7.0.33"
 	},
 	"autoload": {
-		"PHPSimpleCodeGenerator": "src/"
+		"Tmckenzie\\PHPSimpleCodeGenerator\\": "src/"
 	}
 }
