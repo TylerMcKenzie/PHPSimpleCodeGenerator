@@ -6,7 +6,7 @@
 
 namespace PHPSimpleCodeGenerator;
 
-use ClassAttribute;
+use PHPSimpleCodeGenerator\ClassAttribute;
 
 /**
  * Class ClassMethod
