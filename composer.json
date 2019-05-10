@@ -1,0 +1,10 @@
+{
+    "name": "tmckenzie/php-simple-code-generator",
+    "authors": [
+        {
+            "name": "tylermckenzie",
+            "email": "tylrmckenz@gmail.com"
+        }
+    ],
+    "require": {}
+}
