@@ -71,7 +71,7 @@ class ClassGenerator
 		$class =
 			"<?php\n\n" .
 			"{$this->getUses()}" .
-			"class {$this->classname} " . (!empty($this->getExtends()) ? "extends " . $this->getExtends() . " " : "") . "{\n";
+			"class {$this->getClassname()} " . (!empty($this->getExtends()) ? "extends " . $this->getExtends() . " " : "") . "{\n";
 
 		foreach ($this->properties as $property) {
 			if ($default_value = $property->getDefaultValue()) {
@@ -94,6 +94,11 @@ class ClassGenerator
 		$class .= "}\n\n";
 
 		return $class;
+	}
+
+	public function getClassname()
+	{
+		return $this->classname;
 	}
 
 	public function setClassname(string $classname)
